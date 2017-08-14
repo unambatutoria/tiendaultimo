@@ -1,0 +1,24 @@
+extends ./layout.jade
+block contenido
+    form(action="/users",method="POST")
+        div(class="form-group")
+            label(for="name") Email
+            input(type="text", name="name", placeholder="name", id="name", class="form-control")
+        div
+            label(for="picture") Imagen
+            input(type="text", name="picture", placeholder="imagen", id="picture", class="form-control")
+        div
+            label(for="price") Precio
+            input(type="text", name="price", placeholder="precio", id="price", class="form-control")
+        div
+            label(for="category") Categoria
+            input(type="text", name="category", placeholder="computers phones accesories", id="category", class="form-control")
+        div
+            label(for="description") Descripcion
+            input(type="text", name="description", placeholder="description", id="description", class="form-control")
+        div
+            input(type="submit" value="guardar" class="btn btn-info")
+
+
+
+
